@@ -14,12 +14,16 @@
         crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/checkbox_radio_bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <a class="navbar-brand" href="#">Evaflor</a>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/evaflor-logo.png" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,7 +47,66 @@
 
     <main id="main">
         <div id="quizz">
-            
+            <div class="question">
+                <div class="questionNumber">
+                    Question 1
+                </div>
+                <div class="questionContent">
+                    <p>QUEL HOMME WHISKY ÊTES-VOUS ?</p>
+                </div>
+                <div class="answersContainer">
+                    <div class="answer">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                <i class="fa fa-2x icon-checkbox"></i>
+                                Votre salle de musculation
+                            </label>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                <i class="fa fa-2x icon-checkbox"></i>
+                                Chez vous, tout simplement
+                            </label>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                <i class="fa fa-2x icon-checkbox"></i>
+                                A la plage
+                            </label>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                <i class="fa fa-2x icon-checkbox"></i>
+                                Chaque jour dans un endroit différent
+                            </label>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                <i class="fa fa-2x icon-checkbox"></i>
+                                Dans un penthouse en milieu urbain
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn">
+                        Continue
+                    </button>
+                </div>
+            </div>
         </div>
     </main>
 </body>

@@ -3,8 +3,8 @@ body {
     padding-top: 55px;
 }
 
-.navbar{
-    border-bottom: 1px solid #ccc;
+.navbar .navbar-brand img {
+    height: 25px;
 }
 
 #photo {
@@ -29,25 +29,49 @@ body {
     margin-top: 5px;
 }
 
-#pointille{
-	width:90%;
-	margin-left:5px;
-	height:15px;
-	background-repeat:repeat-x;
-	background-image:url(../assets/images/pointille.png);
-	float:left;	
+#pointille {
+    width: 90%;
+    margin-left: 5px;
+    height: 15px;
+    background-repeat: repeat-x;
+    background-image: url(../assets/images/pointille.png);
+    float: left;
+}
+
+#quizz {
+    padding: 20px;
+}
+
+#quizz .question .questionContent {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+#quizz .question .answer {
+    display: block;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+#quizz button.btn{
+    color: #fff;
+    background-color: #FFA747;
+    border-color: #FFA747;
 }
 
 /* modal */
-#congratulationsModal .modal-dialog{
-    width:320px;
-    height:200px;
-    position:absolute;
-    left:50%;
-    top:50%;
-    margin:-100px 0 0 -160px;
+
+#congratulationsModal .modal-dialog {
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -160px;
 }
 
-#congratulationsModal .modal-dialog .modal-body h3{
+#congratulationsModal .modal-dialog .modal-body h3 {
     color: #3DCE71;
 }
