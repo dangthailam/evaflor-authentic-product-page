@@ -20,13 +20,27 @@ body {
     font-size: 13px;
 }
 
-#description .productName {
+#description #recommendProducts{
+    background: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+#description #productNameContainer .productName {
     color: #be8faf;
 }
 
-#description .productNotes {
+#description #descriptionContent .productNotes {
     color: #be8faf;
     margin-top: 5px;
+}
+
+#description #productNameContainer a h4 {
+    color: black;
+}
+
+#description #productNameContainer a:active,
+#description #productNameContainer a:hover{
+    text-decoration: none;
 }
 
 #pointille {
@@ -132,7 +146,7 @@ button.btn {
     position: absolute;
     left: 50%;
     top: 50%;
-    margin: -100px 0 0 -160px;
+    margin: -150px 0 0 -160px;
 }
 
 #congratulationsModal .modal-dialog .modal-body h3 {
