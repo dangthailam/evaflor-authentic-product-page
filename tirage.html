@@ -46,62 +46,44 @@
     </nav>
 
     <main id="main">
-        <div id="quizz">
-            <div id="logoquizz">
-                <img src="assets/images/logoquizz.png"/>
+
+        <form id="formulaire">
+            <div id="carre">
+                <div class="wording">
+                    GAGNEZ
+                    <br/>
+                    <p class="presentDescription">un coffret cadeau
+                        <br/>de la marque Whisky</p>
+                </div>
+
+                <div id="cadeaux" class="row">
+                    <div class="col-4"><img src="assets/images/coffret_men.png" style="width:100%;" /></div>
+                    <div class="col-4"><img src="assets/images/coffret_vintage.png" style="width:100%;" /></div>
+                    <div class="col-4"><img src="assets/images/coffret_sport.png" style="width:100%;" /></div>
+                </div>
+
+                <h5>
+                    TIRAGE AU SORT
+                    <br/> le : --/--/--
+                </h5>
             </div>
-            <div class="question">
-                <div class="questionNumber">
-                    Question 1
-                </div>
-                <div class="questionContent">
-                    <p>QUEL HOMME WHISKY ÊTES-VOUS ?</p>
-                </div>
-                <div class="answersContainer">
-                    <div class="answer">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                <i class="fa fa-2x icon-checkbox"></i>
-                                Votre salle de musculation
-                            </label>
-                        </div>
-                    </div>
-                    <div class="answer">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="" checked>
-                                <i class="fa fa-2x icon-checkbox"></i>
-                                Chez vous, tout simplement
-                            </label>
-                        </div>
-                    </div>
-                    <div class="answer">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                <i class="fa fa-2x icon-checkbox"></i>
-                                Chaque jour dans un endroit différent
-                            </label>
-                        </div>
-                    </div>
-                    <div class="answer">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">
-                                <i class="fa fa-2x icon-checkbox"></i>
-                                Dans un penthouse en milieu urbain
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <button class="btn btn-primary">
-                        Continue
-                    </button>
-                </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="formName" placeholder="Nom / Prénom">
             </div>
-        </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="formEmail" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="formPostalCode" placeholder="Code postal">
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn">JE PARTICIPE*</button>
+            </div>
+
+            <p class="asterixDescription text-center">* et j'accepte de recevoir les offres Whisky.</p>
+        </form>
     </main>
 </body>
 

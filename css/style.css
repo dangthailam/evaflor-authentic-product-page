@@ -38,8 +38,21 @@ body {
     float: left;
 }
 
+
+/* Quizz */
+
 #quizz {
     padding: 20px;
+}
+
+#quizz #logoquizz {
+    background: #343A40;
+    border: 5px solid #000;
+    margin-bottom: 20px;
+}
+
+#quizz #logoquizz img {
+    width: 100%;
 }
 
 #quizz .question .questionContent {
@@ -55,11 +68,61 @@ body {
     font-size: 14px;
 }
 
-#quizz button.btn{
+button.btn {
     color: #fff;
     background-color: #FFA747;
     border-color: #FFA747;
 }
+
+
+/* Tirage au sort */
+
+#formulaire {
+    padding: 20px;
+}
+
+#formulaire .asterixDescription {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#formulaire #carre {
+    background: black;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+#formulaire #carre .wording {
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFA747;
+    display: block;
+    width: 100%;
+}
+
+#formulaire #carre .wording .presentDescription {
+    color: #FFF;
+    font-size: 20px;
+}
+
+#formulaire #carre h5 {
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 4%;
+    margin-top: 0%;
+    color: #FFF;
+    display: block;
+    width: 100%;
+}
+
 
 /* modal */
 
@@ -73,5 +136,5 @@ body {
 }
 
 #congratulationsModal .modal-dialog .modal-body h3 {
-    color: #3DCE71;
+    color: #FFA747;
 }
