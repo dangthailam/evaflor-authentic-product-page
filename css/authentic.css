@@ -1,0 +1,30 @@
+#productAuthentic {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#productAuthentic .checkedLogo{
+    font-size: 80px;
+    color: #E42313;
+}
+
+#productAuthentic .authenticated {
+    font-weight: bold;
+    color: #E42313;
+    font-family: "sectionbold", sans-serif;
+}
+
+#openProductDescriptionBtn{
+    padding: 20px;
+}
+
+#openProductDescriptionBtn a {
+    display: block;
+    padding: 5px;
+    border: 1px solid #212529;
+    color: #212529;
+    border-radius: 20px;
+}

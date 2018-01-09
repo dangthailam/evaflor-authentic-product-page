@@ -1,0 +1,52 @@
+#authenticContent {
+    text-align: center;
+    color: white;
+    background: #000;
+}
+
+#ficheproduit {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#photo img {
+    width: 180px;
+}
+
+#description {
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+#description p {
+    font-size: 13px;
+}
+
+#description #recommendProducts {
+    background: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+#description #descriptionContent .productNotes {
+    margin-top: 5px;
+}
+
+#description #productNameContainer a h4 {
+    color: black;
+}
+
+#description #productNameContainer a:active,
+#description #productNameContainer a:hover {
+    text-decoration: none;
+}
+
+#pointille {
+    width: 90%;
+    margin-left: 5px;
+    height: 15px;
+    background-repeat: repeat-x;
+    background-image: url(../assets/images/pointille.png);
+    float: left;
+}
