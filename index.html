@@ -44,7 +44,7 @@
             </ul>
         </div>
     </nav>
-
+    <!-- <div class="main-bg"></div> -->
     <main id="main">
         <div id="ficheproduit" class="text-center">
             <div id="productAuthentic">
@@ -54,12 +54,42 @@
                     </div>
                     <h4>Ce produit est</h4>
                     <h2 class="authenticated">authentique</h2>
+
+                    <div id="photo">
+                        <span class="photo">
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/formen/">
+                                <img src="assets/images/whisky.png" />
+                            </a>
+                        </span>
+                    </div>
+                    <div id="description">
+                        <div id="productNameContainer">
+                            <a class="productBrand">
+                                <h4>
+                                    <span>WHISKY FOR MEN</span>
+                                </h4>
+                            </a>
+                            <p class="productName">EAU DE TOILETTE</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="openProductDescriptionBtn">
-                <a href="#" class="productDescriptionBtnContent">
+                <a class="productDescriptionBtnContent" data-toggle="collapse" href="#descriptionContent" role="button" aria-expanded="true"
+                    aria-controls="descriptionContent">
                     Description de produit
                 </a>
+            </div>
+            <div id="descriptionContent" class="collapse" role="tabpanel">
+                <p class="productDescription">
+                    Cet homme est élégant; à la fois simple, mais sophistiqué. Son style affirmé ne passe pas inaperçu. WHISKY FOR MEN intensifie
+                    le pouvoir d’attraction.
+                </p>
+                <p class="productNotes">
+                    TOP NOTES : Apricot, Pineapple, Mango
+                    <br/>MIDDLE NOTES : Rose, Jasmine, Freesia
+                    <br/>BASE NOTES : Vanilla, Amber, Musk
+                </p>
             </div>
         </div>
     </main>

@@ -11,9 +11,9 @@
     justify-content: center;
 }
 
-#photo img {
+/* #photo img {
     width: 100%;
-}
+} */
 
 #description {
     padding: 20px;
@@ -33,15 +33,6 @@
     margin-top: 5px;
 }
 
-#description #productNameContainer a h4 {
-    color: black;
-}
-
-#description #productNameContainer a:active,
-#description #productNameContainer a:hover {
-    text-decoration: none;
-}
-
 #pointille {
     width: 90%;
     margin-left: 5px;
@@ -49,4 +40,12 @@
     background-repeat: repeat-x;
     background-image: url(../assets/images/pointille.png);
     float: left;
+}
+
+#photo{
+    background-color: #f0ede8;
+}
+
+#photo img{
+    width: 100%;
 }

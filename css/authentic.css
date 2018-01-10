@@ -28,3 +28,16 @@
     color: #212529;
     border-radius: 20px;
 }
+
+#photo .photo img{
+    width: 200px;
+}
+
+#description #productNameContainer a h4 {
+    color: black;
+}
+
+#description #productNameContainer a:active,
+#description #productNameContainer a:hover {
+    text-decoration: none;
+}

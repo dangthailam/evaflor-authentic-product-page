@@ -14,9 +14,25 @@ body {
     padding-top: 55px;
 }
 
+div.main-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index:-1;
+    background: url('http://www.certilogo.com/assets/images/cover/cover15.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: grey;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
 .navbar {
     background: #fff;
-    border-bottom: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(22, 8, 8);
 }
 
 .navbar .navbar-brand {
