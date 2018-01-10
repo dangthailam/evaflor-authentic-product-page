@@ -5,19 +5,17 @@
 }
 
 #ficheproduit {
-    height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 40px;
 }
 
-/* #photo img {
-    width: 100%;
-} */
+#photo img {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    width: 200px;
+}
 
 #description {
-    padding: 20px;
-    letter-spacing: 1px;
+    margin-top: 20px;
 }
 
 #description p {
@@ -29,23 +27,47 @@
     margin-bottom: 15px;
 }
 
+#descriptionContent {
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
 #description #descriptionContent .productNotes {
     margin-top: 5px;
 }
 
-#pointille {
-    width: 90%;
-    margin-left: 5px;
-    height: 15px;
-    background-repeat: repeat-x;
-    background-image: url(../assets/images/pointille.png);
-    float: left;
+#description #productNameContainer a h4 {
+    color: white;
 }
 
-#photo{
-    background-color: #f0ede8;
+#description #productNameContainer a:active,
+#description #productNameContainer a:hover {
+    text-decoration: none;
 }
 
-#photo img{
-    width: 100%;
+.openProductDescriptionBtn{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.openProductDescriptionBtn a {
+    display: block;
+    padding: 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.openProductDescriptionBtn a.active {
+    background: white;
+    color: black;
+    text-decoration: underline;
+}
+
+#recommendProducts img {
+    width: 150px;
+}
+
+#recommendProducts .recommentProductContainer {
+    background: white;
 }

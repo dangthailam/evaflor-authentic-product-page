@@ -12,6 +12,7 @@ body {
     font-family: "sectionmedium", Arial, Sans-Serif;
     letter-spacing: 1px;
     padding-top: 55px;
+    color: white;
 }
 
 div.main-bg{
@@ -21,44 +22,27 @@ div.main-bg{
     bottom: 0;
     right: 0;
     z-index:-1;
-    background: url('http://www.certilogo.com/assets/images/cover/cover15.jpg');
-    background-position: top center;
+    background: url('../assets/images/cover/lightning.jpg');
+    background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: grey;
     -webkit-filter: blur(5px);
     filter: blur(5px);
 }
 
-.navbar {
-    background: #fff;
-    border-bottom: 1px solid rgb(22, 8, 8);
-}
-
 .navbar .navbar-brand {
-    width: 100%;
-    text-align: center;
     margin-right: 0;
 }
 
 .navbar .navbar-toggler {
-    position: absolute;
-    left: 0;
-    top: 14px;
-}
-
-.navbar .navbar-toggler .navigationLogo {
-    height: 30px;
-    width: 52px;
-    background-image: url('../assets/images/btn_navigation_m_black.png');
-    background-position: 0 -21px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .navbar .navbar-brand img {
     height: 25px;
 }
-
-
 
 /* Quizz */
 

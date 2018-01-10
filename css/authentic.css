@@ -8,12 +8,12 @@
 
 #productAuthentic .checkedLogo{
     font-size: 80px;
-    color: #E42313;
+    color: #dc3545;
 }
 
 #productAuthentic .authenticated {
     font-weight: bold;
-    color: #E42313;
+    color: #dc3545;
     font-family: "sectionbold", sans-serif;
 }
 
@@ -24,17 +24,23 @@
 #openProductDescriptionBtn a {
     display: block;
     padding: 5px;
-    border: 1px solid #212529;
-    color: #212529;
+    border: 1px solid #fff;
+    color: #fff;
     border-radius: 20px;
+}
+
+#photo {
+    margin-bottom: 15px;
 }
 
 #photo .photo img{
     width: 200px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
 }
 
 #description #productNameContainer a h4 {
-    color: black;
+    color: white;
 }
 
 #description #productNameContainer a:active,
