@@ -22,7 +22,7 @@ div.main-bg{
     bottom: 0;
     right: 0;
     z-index:-1;
-    background: url('../assets/images/cover/lightning.jpg');
+    background: url('../assets/images/cover/texture.jpg');
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,8 +51,8 @@ div.main-bg{
 }
 
 #quizz #logoquizz {
-    background: #343A40;
-    border: 5px solid #000;
+    /* background: rgba(255, 255, 255, 0.7);
+    border: 5px solid #000; */
     margin-bottom: 20px;
 }
 
@@ -75,8 +75,8 @@ div.main-bg{
 
 button.btn {
     color: #fff;
-    background-color: #FFA747;
-    border-color: #FFA747;
+    background-color: #dc3545;
+    border-color: #dc3545;
 }
 
 
@@ -93,19 +93,17 @@ button.btn {
 }
 
 #formulaire #carre {
-    background: black;
-    margin-bottom: 20px;
+    font-family: "sectionbold", sans-serif;
     padding: 20px 0;
 }
 
 #formulaire #carre .wording {
     text-align: center;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: lighter;
     letter-spacing: 1px;
     margin-bottom: 5px;
-    color: #FFA747;
+    color: #dc3545;
     display: block;
     width: 100%;
 }
@@ -117,7 +115,6 @@ button.btn {
 
 #formulaire #carre h5 {
     text-align: center;
-    font-family: Tahoma, Geneva, sans-serif;
     font-size: 20px;
     font-weight: lighter;
     letter-spacing: 1px;

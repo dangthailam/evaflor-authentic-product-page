@@ -45,29 +45,10 @@
     text-decoration: none;
 }
 
-.openProductDescriptionBtn{
-    padding: 0 20px;
-    margin-bottom: 20px;
-}
-
-.openProductDescriptionBtn a {
-    display: block;
-    padding: 5px;
-    border: 1px solid #fff;
-    color: #fff;
-    border-radius: 20px;
-}
-
-.openProductDescriptionBtn a.active {
-    background: white;
-    color: black;
-    text-decoration: underline;
-}
-
-#recommendProducts img {
+/* #recommendProducts img {
     width: 150px;
-}
+} */
 
-#recommendProducts .recommentProductContainer {
-    background: white;
+#recommendProducts {
+    background: rgba(255, 255, 255, 0.7);
 }
