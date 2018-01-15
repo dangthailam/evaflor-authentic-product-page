@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "sectionmedium";
     src: url('../assets/font/section-medium-webfont.woff2');
 }
@@ -6,10 +6,10 @@
 @font-face {
     font-family: "sectionbold";
     src: url('../assets/font/section-bold-webfont.woff2');
-}
+} */
 
 body {
-    font-family: "sectionmedium", Arial, Sans-Serif;
+    font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
     padding-top: 55px;
     color: white;
@@ -92,8 +92,8 @@ button.btn {
 }
 
 #formulaire #carre {
-    font-family: "sectionbold", sans-serif;
-    padding: 20px 0;
+    /* font-family: "sectionbold", sans-serif; */
+    padding: 10px 0;
 }
 
 #formulaire #carre .wording {
@@ -102,9 +102,14 @@ button.btn {
     font-weight: lighter;
     letter-spacing: 1px;
     margin-bottom: 5px;
-    color: #dc3545;
+    /* color: #dc3545; */
     display: block;
     width: 100%;
+}
+
+#formulaire #carre .wording h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
 }
 
 #formulaire #carre .wording .presentDescription {
@@ -122,20 +127,4 @@ button.btn {
     color: #FFF;
     display: block;
     width: 100%;
-}
-
-
-/* modal */
-
-#congratulationsModal .modal-dialog {
-    width: 320px;
-    height: 200px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -150px 0 0 -160px;
-}
-
-#congratulationsModal .modal-dialog .modal-body h3 {
-    color: #FFA747;
 }
