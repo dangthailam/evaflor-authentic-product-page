@@ -38,7 +38,7 @@
 .checkbox input[type="checkbox"]:checked+i:before,
 .radio input[type="radio"]:checked+i:before {
   content: "\f046";
-  color: #dc3545;
+  color: #9E7A04;
 }
 
 .checkbox input[type="checkbox"]:disabled+i:before,

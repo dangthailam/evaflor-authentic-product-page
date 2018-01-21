@@ -14,10 +14,10 @@
         crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="css/checkbox_radio_bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/not-authentic.css">
 </head>
 
 <body>
@@ -55,49 +55,54 @@
     </nav>
     <div class="main-bg"></div>
     <main id="main">
+        <div id="ficheproduit" class="text-center">
+            <div id="productAuthentic">
+                <div class="authenticContainer">
+                    <div class="checkedLogo">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="checkedLogoText">
+                        <h4>Ce produit n'est pas</h4>
+                        <h2 class="authenticated">authentique</h2>
+                    </div>
 
-        <form id="formulaire">
-            <div id="carre">
-                <div class="wording">
-                    <h1>GAGNEZ</h1>
-                    <p class="presentDescription">un coffret cadeau
-                        <br/>de la marque Whisky</p>
+                    <div id="photo">
+                        <span class="photo">
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/formen/">
+                                <img src="assets/images/whisky.png" />
+                            </a>
+                        </span>
+                    </div>
+                    <div id="description">
+                        <div id="productNameContainer">
+                            <a class="productBrand">
+                                <h4>
+                                    <span>WHISKY FOR MEN</span>
+                                </h4>
+                            </a>
+                            <p class="productName">EAU DE TOILETTE</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div id="cadeaux" class="row">
-                    <div class="col-4">
-                        <img src="assets/images/coffret_men.png" style="width:100%;" />
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/images/coffret_vintage.png" style="width:100%;" />
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/images/coffret_sport.png" style="width:100%;" />
-                    </div>
-                </div>
-
-                <h5>
-                    TIRAGE AU SORT
-                    <br/> le : --/--/--
-                </h5>
             </div>
-
-            <div class="form-group">
-                <input type="text" class="form-control" id="formName" placeholder="Nom / Prénom">
+            <div id="openProductDescriptionBtn">
+                <a class="productDescriptionBtnContent" data-toggle="collapse" href="#descriptionContent" role="button" aria-expanded="true"
+                    aria-controls="descriptionContent">
+                    Description de produit
+                </a>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="formEmail" placeholder="Email">
+            <div id="descriptionContent" class="collapse" role="tabpanel">
+                <p class="productDescription">
+                    Cet homme est élégant; à la fois simple, mais sophistiqué. Son style affirmé ne passe pas inaperçu. WHISKY FOR MEN intensifie
+                    le pouvoir d’attraction.
+                </p>
+                <p class="productNotes">
+                    TOP NOTES : Apricot, Pineapple, Mango
+                    <br/>MIDDLE NOTES : Rose, Jasmine, Freesia
+                    <br/>BASE NOTES : Vanilla, Amber, Musk
+                </p>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="formPostalCode" placeholder="Code postal">
-            </div>
-
-            <div class="text-center">
-                <button type="submit" class="btn">JE PARTICIPE*</button>
-            </div>
-
-            <p class="asterixDescription text-center">* et j'accepte de recevoir les offres Whisky.</p>
-        </form>
+        </div>
     </main>
 </body>
 

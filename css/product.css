@@ -9,7 +9,7 @@
 }
 
 #photo img {
-    background: rgba(255, 255, 255, 0.7);
+    background: #fff;
     border-radius: 50%;
     width: 200px;
 }

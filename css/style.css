@@ -30,6 +30,18 @@ div.main-bg{
     filter: blur(5px);
 }
 
+.languages-container {
+    margin-left: auto;
+}
+
+.languages-container img{
+    width: 26px;
+}
+
+#main{
+    position: relative;
+}
+
 .navbar .navbar-brand {
     margin-right: 0;
 }
@@ -74,8 +86,8 @@ div.main-bg{
 
 button.btn {
     color: #fff;
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #9E7A04;
+    border-color: #9E7A04;
 }
 
 
@@ -108,8 +120,7 @@ button.btn {
 }
 
 #formulaire #carre .wording h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 60px;
+    color: #9E7A04;
 }
 
 #formulaire #carre .wording .presentDescription {

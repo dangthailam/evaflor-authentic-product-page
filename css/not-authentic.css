@@ -8,12 +8,15 @@
 
 #productAuthentic .checkedLogo{
     font-size: 80px;
-    color: #9E7A04;
+    color: #dc3545;
+}
+
+#productAuthentic .checkedLogoText {
+    color: #dc3545;
 }
 
 #productAuthentic .authenticated {
     font-weight: bold;
-    color: #9E7A04;
     font-family: "sectionbold", sans-serif;
 }
 
