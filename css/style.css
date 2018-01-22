@@ -42,6 +42,21 @@ div.main-bg{
     position: relative;
 }
 
+.navbar.navbar-opened {
+    background: #292b2c;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.navbar ul li.social-icons a img{
+    margin-top: 5px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    height: 40px;
+}
+
 .navbar .navbar-brand {
     margin-right: 0;
 }
@@ -59,16 +74,17 @@ div.main-bg{
 /* Quizz */
 
 #quizz {
-    padding: 20px;
-}
-
-#quizz #logoquizz {
-    border: 1px solid #fff;
-    margin-bottom: 20px;
+    padding: 10px 20px;
 }
 
 #quizz #logoquizz img {
     width: 100%;
+}
+
+#quizz .quizz-slogan{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
 }
 
 #quizz .question .questionContent {
