@@ -1,0 +1,244 @@
+#productAuthentic {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase; }
+
+#productAuthentic .checkedLogo {
+  font-size: 80px;
+  color: #9E7A04; }
+  #productAuthentic .checkedLogoText {
+    color: #9E7A04; }
+
+#productAuthentic .notAuthentic-checkedLogo {
+  font-size: 80px;
+  color: #dc3545; }
+  #productAuthentic .notAuthentic-checkedLogoText {
+    color: #dc3545; }
+
+#productAuthentic #productAuthentic .authenticated {
+  font-weight: bold;
+  font-family: "sectionbold", sans-serif; }
+
+#openProductDescriptionBtn {
+  padding: 20px; }
+
+#openProductDescriptionBtn a {
+  display: block;
+  padding: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 20px; }
+
+#photo {
+  margin-bottom: 30px; }
+
+#photo .photo img {
+  width: 200px;
+  background-color: #fff;
+  border-radius: 50%; }
+
+#description #productNameContainer a h4 {
+  color: white; }
+
+#description #productNameContainer a:active,
+#description #productNameContainer a:hover {
+  text-decoration: none; }
+
+.checkbox,
+.radio {
+  display: inline-block; }
+
+.checkbox:hover,
+.radio:hover {
+  cursor: pointer; }
+
+.checkbox .fa,
+.radio .fa {
+  width: 1em; }
+
+.indent {
+  padding-left: 30px; }
+
+.indent .fa {
+  margin-left: -30px; }
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  display: none; }
+
+.checkbox input[type="checkbox"] + i:before,
+.radio input[type="radio"] + i:before {
+  content: "\f096";
+  position: relative;
+  bottom: -4px;
+  margin-right: 5px;
+  color: #999; }
+
+.checkbox input[type="checkbox"]:checked + i:before,
+.radio input[type="radio"]:checked + i:before {
+  content: "\f046";
+  color: #9E7A04; }
+
+.checkbox input[type="checkbox"]:disabled + i:before,
+.checkbox input[type="checkbox"]:disabled:checked + i:before,
+.radio input[type="radio"]:disabled + i:before,
+.radio input[type="radio"]:disabled:checked + i:before {
+  color: #ddd; }
+
+/*RADIO*/
+.radio input[type="radio"] + i:before {
+  content: "\f1db"; }
+
+.radio input[type="radio"]:checked + i:before {
+  content: "\f058"; }
+
+/* CHECKBOX&RADIO XS*/
+.checkbox-xs input[type="checkbox"] + i:before,
+.radio-xs input[type="radio"] + i:before {
+  bottom: 0; }
+
+.checkbox-xs.indent,
+.radio-xs.indent {
+  padding-left: 20px; }
+
+.checkbox-xs.indent .fa,
+.radio-xs.indent .fa {
+  margin-left: -20px; }
+
+#authenticContent {
+  text-align: center;
+  color: white;
+  background: #000; }
+
+#photo img {
+  background: #fff;
+  border-radius: 50%;
+  width: 200px; }
+
+#description {
+  margin-top: 20px; }
+  #description p {
+    font-size: 13px; }
+  #description #descriptionContent {
+    padding: 20px;
+    letter-spacing: 1px; }
+    #description #descriptionContent .productNotes {
+      margin-top: 5px; }
+  #description #productNameContainer a h4 {
+    color: white; }
+  #description #productNameContainer a:active,
+  #description #productNameContainer a:hover {
+    text-decoration: none; }
+
+#recommendProducts {
+  background: rgba(255, 255, 255, 0.7); }
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
+  padding-top: 55px;
+  color: #fff; }
+
+div.main-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: url("../images/cover/texture.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  filter: blur(5px); }
+
+.languages-container {
+  margin-left: auto; }
+  .languages-container img {
+    width: 26px; }
+
+#main {
+  position: relative; }
+
+.navbar.navbar-opened {
+  background: #292b2c; }
+
+.navbar a {
+  color: #fff; }
+
+.navbar ul li.social-icons a img {
+  margin-top: 5px;
+  margin-right: 10px;
+  padding-bottom: 5px;
+  height: 40px; }
+
+.navbar .navbar-brand {
+  margin-right: 0; }
+
+.navbar .navbar-toggler {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold; }
+
+.navbar .navbar-brand img {
+  height: 25px; }
+
+/* Quizz */
+#quizz {
+  padding: 10px 20px; }
+  #quizz #logoquizz img {
+    width: 100%; }
+  #quizz .quizz-slogan {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700; }
+  #quizz .question .questionContent {
+    margin: 15px 0;
+    font-size: 18px; }
+  #quizz .question .answer {
+    display: block;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 14px; }
+
+button.btn {
+  color: #fff;
+  background-color: #9E7A04;
+  border-color: #9E7A04; }
+
+/* Tirage au sort */
+#formulaire {
+  padding: 20px; }
+  #formulaire .asterixDescription {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  #formulaire #carre {
+    padding: 10px 0; }
+    #formulaire #carre .wording {
+      text-align: center;
+      font-size: 40px;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+      display: block;
+      width: 100%; }
+      #formulaire #carre .wording h1 {
+        color: #9E7A04; }
+      #formulaire #carre .wording .presentDescription {
+        color: #FFF;
+        font-size: 20px; }
+    #formulaire #carre h5 {
+      text-align: center;
+      font-size: 20px;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      margin-bottom: 4%;
+      margin-top: 0%;
+      color: #FFF;
+      display: block;
+      width: 100%; }

@@ -1,0 +1,40 @@
+
+#authenticContent {
+    text-align: center;
+    color: white;
+    background: #000;
+}
+
+#photo img {
+    background: #fff;
+    border-radius: 50%;
+    width: 200px;
+}
+
+#description {
+    margin-top: 20px;
+
+    p {
+        font-size: 13px;
+    }
+    
+    #descriptionContent {
+        padding: 20px;
+        letter-spacing: 1px;
+        .productNotes {
+            margin-top: 5px;
+        }
+    }
+    #productNameContainer a h4 {
+        color: white;
+    }
+
+    #productNameContainer a:active,
+    #productNameContainer a:hover {
+        text-decoration: none;
+    }
+}
+
+#recommendProducts {
+    background: rgba(255, 255, 255, 0.7);
+}

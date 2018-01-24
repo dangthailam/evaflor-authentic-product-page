@@ -1,3 +1,5 @@
+$notAuthenticColor: #dc3545;
+$authenticColor: #9E7A04;
 #productAuthentic {
     height: 80vh;
     display: flex;
@@ -6,21 +8,32 @@
     text-transform: uppercase;
 }
 
-#productAuthentic .checkedLogo{
-    font-size: 80px;
-    color: #dc3545;
+#productAuthentic {
+    .checkedLogo {
+        font-size: 80px;
+        color: $authenticColor;
+
+        &Text {
+            color: $authenticColor;
+        }
+    }
+    
+    .notAuthentic-checkedLogo{
+        font-size: 80px;
+        color: $notAuthenticColor;
+
+        &Text {
+            color: $notAuthenticColor;
+        }
+    }
 }
 
-#productAuthentic .checkedLogoText {
-    color: #dc3545;
-}
-
-#productAuthentic .authenticated {
+#productAuthentic #productAuthentic .authenticated {
     font-weight: bold;
     font-family: "sectionbold", sans-serif;
 }
 
-#openProductDescriptionBtn{
+#openProductDescriptionBtn {
     padding: 20px;
 }
 
@@ -36,7 +49,7 @@
     margin-bottom: 30px;
 }
 
-#photo .photo img{
+#photo .photo img {
     width: 200px;
     background-color: #fff;
     border-radius: 50%;

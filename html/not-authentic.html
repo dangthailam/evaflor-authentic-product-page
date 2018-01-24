@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="../images/evaflor-logo-white.png" alt="">
+        </a>
+        <div class="languages-container">
+            <a href="">
+                <img src="../images/english.png" alt="" srcset="">
+            </a>
+            <a href="">
+                <img src="../images/french.png" alt="" srcset="">
+            </a>
+        </div>
+        <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">À propos de nous
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Collection Whisky</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tous nos produits</a>
+                </li>
+                <li class="nav-item social-icons">
+                    <a href="#">
+                        <img src="../images/facebook.png" alt="" srcset="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/twitter.png" alt="" srcset="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/insta.png" alt="" srcset="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/mail.png" alt="" srcset="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-bg"></div>
+    <main id="main">
+        <div id="ficheproduit" class="text-center">
+            <div id="productAuthentic">
+                <div class="authenticContainer">
+                    <div class="notAuthentic-checkedLogo">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="notAuthentic-checkedLogoText">
+                        <h4>Ce produit n'est pas</h4>
+                        <h2 class="authenticated">authentique</h2>
+                    </div>
+
+                    <div id="photo">
+                        <span class="photo">
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/formen/">
+                                <img src="../images/whisky.png" />
+                            </a>
+                        </span>
+                    </div>
+                    <div id="description">
+                        <div id="productNameContainer">
+                            <a class="productBrand">
+                                <h4>
+                                    <span>WHISKY FOR MEN</span>
+                                </h4>
+                            </a>
+                            <p class="productName">EAU DE TOILETTE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="openProductDescriptionBtn">
+                <a class="productDescriptionBtnContent" data-toggle="collapse" href="#descriptionContent" role="button" aria-expanded="true"
+                    aria-controls="descriptionContent">
+                    Description de produit
+                </a>
+            </div>
+            <div id="descriptionContent" class="collapse" role="tabpanel">
+                <p class="productDescription">
+                    Cet homme est élégant; à la fois simple, mais sophistiqué. Son style affirmé ne passe pas inaperçu. WHISKY FOR MEN intensifie
+                    le pouvoir d’attraction.
+                </p>
+                <p class="productNotes">
+                    TOP NOTES : Apricot, Pineapple, Mango
+                    <br/>MIDDLE NOTES : Rose, Jasmine, Freesia
+                    <br/>BASE NOTES : Vanilla, Amber, Musk
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
