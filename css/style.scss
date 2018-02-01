@@ -1,6 +1,7 @@
 $bodyColor: #fff;
 $openedNavbarBackground: #292b2c;
 $borderColor: #ccc;
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
@@ -21,6 +22,12 @@ div.main-bg {
     background-size: cover;
     -webkit-filter: blur(5px);
     filter: blur(5px);
+}
+
+.center-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .languages-container {

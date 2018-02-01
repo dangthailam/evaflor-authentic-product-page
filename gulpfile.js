@@ -6,12 +6,14 @@ var paths = {
     srcHTML: './html/*.html',
     srcCSS: './css/**/*.scss',
     srcJs: './scripts/*.js',
+    srcFont: './assets/font/**/**.*',
     srcImages: './assets/images/**/**.*',
 
     distHTML: './dist/html',
     distCSS: './dist/css',
     distJs: './dist/scripts',
-    distImages: './dist/images'
+    distImages: './dist/images',
+    distFont: './dist/font'
 };
 
 gulp.task('img', function(){
@@ -30,9 +32,13 @@ gulp.task('sass', function(){
     return gulp.src(paths.srcCSS).pipe(concat('style.scss')).pipe(sass()).pipe(gulp.dest(paths.distCSS));
 });
 
+gulp.task('font', function(){
+    return gulp.src(paths.srcFont).pipe(gulp.dest(paths.distFont));
+});
+
 gulp.task('watch', function(){
     gulp.watch([
         paths.srcHTML,
         paths.srcCSS
-    ], ['html', 'sass', 'js', 'img']);
+    ], ['html', 'sass', 'js', 'img', 'font']);
 });

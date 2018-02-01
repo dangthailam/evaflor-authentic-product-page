@@ -1,0 +1,41 @@
+.main-gagnant {
+    height: calc(100vh - 56px);
+
+    p {
+        margin-bottom: 0;
+    }
+    .prefix-content {
+        font-family: 'Tillana', cursive;
+        margin-bottom: 1.25rem;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.25rem;
+        }
+    }
+    .winner {
+        margin-bottom: 1.25rem;
+
+        .winner-name {
+            font-size: 2rem;
+            font-weight: 700;
+            span {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .prize {
+        width: 220px;
+        height: 220px;
+        background: #fff;
+        border-radius: 50%;
+        margin: 0 auto;
+
+        img {
+            width: 180px;
+        }
+    }
+}
