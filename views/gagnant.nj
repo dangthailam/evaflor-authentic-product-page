@@ -1,0 +1,24 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+
+
+{% block content %}
+    <div id="main" class="main-gagnant container center-part text-center">
+        <div class="gagnant-content">
+            <div class="prefix-content">
+                <p>Félicitations</p>
+                <p>à notre gagnant</p>
+            </div>
+            <div class="winner">
+                <span class="winner-name">
+                    <h6>Monsieur</h6> 
+                    <h1>DUPONT</h1>
+                </span>
+                <p>n° 1234567</p>
+            </div>
+            <div class="prize">
+                <img src="../images/whisky-with-pack.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+{% endblock %}

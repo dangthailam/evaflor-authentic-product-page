@@ -1,0 +1,32 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+
+
+{% block content %}
+    <main id="main">
+        <div id="quizz">
+            <div id="logoquizz">
+                <img src="../images/logoquizz.png" />
+            </div>
+            <p class="quizz-slogan">QUEL HOMME WHISKY ÊTES-VOUS ?</p>
+            
+            <form class="form" action="">
+                <div class="form-group">
+                    <button class="btn red-btn uppercase bold-text">
+                        Voir mon résultat
+                    </button>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="formName" placeholder="Nom / Prénom">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="formEmail" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="formPostalCode" placeholder="Code postal">
+                </div>
+            </form>
+
+        </div>
+    </main>
+{% endblock %}
