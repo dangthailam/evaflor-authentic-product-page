@@ -45,7 +45,7 @@ gulp.task('watch', ['nunjucks', 'sass', 'js', 'img', 'font'], function () {
 });
 
 gulp.task('nunjucks', function () {
-    return gulp.src('views/*.+(nj)').pipe(nunjucksRender({
+    return gulp.src('views/*.html').pipe(nunjucksRender({
         path: ['views']
     })).pipe(gulp.dest('dist/html'));
 });

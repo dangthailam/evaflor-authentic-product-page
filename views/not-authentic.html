@@ -1,17 +1,19 @@
 <!-- index.nunjucks -->
-{% extends "layout.html" %}
+{% extends "layout.layout.html" %}
 
 
 {% block content %}
-    <div id="main">
+    <main id="main">
         <div id="ficheproduit" class="text-center">
             <div id="productAuthentic">
                 <div class="authenticContainer">
-                    <div class="checkedLogo">
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <div class="notAuthentic-checkedLogo">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
                     </div>
-                    <h4>Ce produit est</h4>
-                    <h2 class="authenticated">authentique</h2>
+                    <div class="notAuthentic-checkedLogoText">
+                        <h4>Ce produit n'est pas</h4>
+                        <h2 class="authenticated">authentique</h2>
+                    </div>
 
                     <div id="photo">
                         <span class="photo">
@@ -50,5 +52,5 @@
                 </p>
             </div>
         </div>
-    </div>
+    </main>
 {% endblock %}
