@@ -1,41 +1,42 @@
 .main-gagnant {
     height: calc(100vh - 56px);
-
     p {
         margin-bottom: 0;
     }
     .prefix-content {
-        font-family: 'Tillana', cursive;
-        margin-bottom: 1.25rem;
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-        }
+        font-family: 'Yellowtail', cursive;
+        margin-bottom: 2rem;
+        -ms-transform: rotate(-8deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-8deg);
+        /* Safari */
+        transform: rotate(-8deg);
         p {
-            font-size: 1.25rem;
+            font-size: 43px;
         }
     }
     .winner {
         margin-bottom: 1.25rem;
-
         .winner-name {
-            font-size: 2rem;
+            font-family: 'League Spartan';
             font-weight: 700;
-            span {
-                font-size: 1.5rem;
+            h6 {
+                font-size: 28px;
+            }
+            h1 {
+                font-size: 56px;
             }
         }
     }
     .prize {
-        width: 220px;
-        height: 220px;
+        width: 200px;
+        height: 200px;
+        padding: 35px;
         background: #fff;
         border-radius: 50%;
         margin: 0 auto;
-
         img {
-            width: 180px;
+            width: 140px;
         }
     }
 }

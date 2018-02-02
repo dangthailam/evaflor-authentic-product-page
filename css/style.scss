@@ -2,6 +2,11 @@ $bodyColor: #fff;
 $openedNavbarBackground: #292b2c;
 $borderColor: #ccc;
 
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../font/LeagueSpartan-Bold.woff');
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;

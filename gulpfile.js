@@ -36,7 +36,7 @@ gulp.task('font', function(){
     return gulp.src(paths.srcFont).pipe(gulp.dest(paths.distFont));
 });
 
-gulp.task('watch', function(){
+gulp.task('watch', ['html', 'sass', 'js', 'img', 'font'], function(){
     gulp.watch([
         paths.srcHTML,
         paths.srcCSS
