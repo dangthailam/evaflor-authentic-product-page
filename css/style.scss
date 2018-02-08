@@ -74,40 +74,6 @@ div.main-bg {
 }
 
 
-/* Quizz */
-
-#quizz {
-    padding: 10px 20px;
-    #logoquizz img {
-        width: 100%;
-    }
-    .quizz-slogan {
-        font-size: 18px;
-        text-align: center;
-        font-weight: 700;
-    }
-    .question {
-        .questionContent {
-            margin: 15px 0;
-            font-size: 18px;
-        }
-        .answer {
-            display: block;
-            padding: 15px;
-            border: 1px solid $borderColor;
-            margin-bottom: 15px;
-            font-size: 14px;
-        }
-    }
-}
-
-button.btn {
-    color: #fff;
-    background-color: #9E7A04;
-    border-color: #9E7A04;
-}
-
-
 /* Tirage au sort */
 
 #formulaire {

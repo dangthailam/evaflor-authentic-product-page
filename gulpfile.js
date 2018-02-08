@@ -40,7 +40,8 @@ gulp.task('font', function () {
 gulp.task('watch', ['nunjucks', 'sass', 'js', 'img', 'font'], function () {
     gulp.watch([
         paths.srcHTML,
-        paths.srcCSS
+        paths.srcCSS,
+        paths.srcJs
     ], ['nunjucks', 'sass', 'js', 'img', 'font']);
 });
 

@@ -1,0 +1,29 @@
+{% extends "layout.layout.html" %} {% block content %}
+<main id="main">
+    <div id="jackpot">
+        <div id="jackpot-header">
+            <div class="container">
+                <img src="../images/jackpot.png" alt="" srcset="">
+            </div>
+            <div id="jackpot-wordings">
+                <p>
+                    En cliquant sur le bouton "JOUER", les rouleaux s'accionneront automatiquement. Il ne vous reste plus qu'à aligner 3 flacons
+                    identique, et il sera à vous!
+                </p>
+                <h5>BONNE CHANCE</h5>
+            </div>
+        </div>
+        <div id="jackpot-machine-container">
+            <div id="jackpot-machine" class="row">
+            </div>
+        </div>
+        <div id="jackpot-form-container">
+            <div class="form-group btn-container text-center">
+                <button class="btn red-btn uppercase bold-text" id="play-jackpot" type="button">
+                    JOUER
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
