@@ -22,18 +22,14 @@ $(function () {
 
     $("#play-jackpot").click(function () {
         jackpot.spinAll();
-
-        // $(this).animate({
-        //     marginTop: "50px"
-        // }, 1000);
     });
 });
 
 function Jackpot(id, products) {
     var that = this;
 
-    this.time = 6500; //time in millis for a spin to take	
-    this.howManySymbolsToAppend = Math.round(this.time / 325); //how many symbols each spin adds
+    this.time = 6500;
+    this.howManySymbolsToAppend = Math.round(this.time / 325);
     this.endingLocation = 7;
     this.products = products;
     this.container = $("#" + id);
@@ -45,11 +41,8 @@ function Jackpot(id, products) {
         for (var i = 0; i < this.reelCount; i++) {
             var col4 = $('<div class="col-4"></div>');
             var slider = $('<div class="roulette"></div>');
-
             col4.append(slider);
-
             this.addSymbolsToStrip(slider, true);
-
             this.container.append(col4);
             this.sliders.push(slider);
         }
@@ -61,8 +54,6 @@ function Jackpot(id, products) {
 
         for (var i = 0; i < that.howManySymbolsToAppend; i++) {
             var ctr = (i === this.endingLocation) ? chosen : Math.floor(Math.random() * products.length);
-
-            //we nest "content" inside of "symbol" so we can do vertical and horizontal centering more easily
             var image = $(products[ctr]);
             var slot = $("<div class='slot'></div>");
             if (i === 0 && isOnInit) {
@@ -78,17 +69,16 @@ function Jackpot(id, products) {
     };
 
     this.spinAll = function () {
-        var results = [];
+        var result = [];
         for (var i = 0; i < this.reelCount; i++) {
-            results.push(that.spinOne(that.sliders[i]));
+            result.push(that.spinOne(that.sliders[i]));
         }
-
-        return results;
+        return result;
     };
 
     this.spinOne = function (slider) {
         var heightBefore = parseInt(slider.css("height"), 10);
-        var chosen = that.addSymbolsToStrip(slider, false);
+        that.addSymbolsToStrip(slider, false);
         var marginTop = -(heightBefore + ((that.endingLocation) * that.height) + 28);
         slider.stop().animate({
             marginTop: marginTop + "px"
@@ -96,6 +86,7 @@ function Jackpot(id, products) {
             'duration': that.time + Math.round(Math.random() * 1000),
             'easing': "easeOutElastic"
         });
-        return chosen;
+        
+        return slider.find('.slot:nth(' + (slider.find('.slot').length - 13) + ')').find('img').attr('src');
     };
 }
