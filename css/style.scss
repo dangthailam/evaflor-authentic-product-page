@@ -1,7 +1,6 @@
 $bodyColor: #fff;
 $openedNavbarBackground: #292b2c;
 $borderColor: #ccc;
-
 @font-face {
     font-family: 'League Spartan';
     src: url('../font/LeagueSpartan-Bold.woff');
@@ -12,6 +11,15 @@ body {
     letter-spacing: 1px;
     padding-top: 55px;
     color: $bodyColor;
+    a:active,
+    a:focus {
+        text-decoration: none;
+    }
+    :focus {
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
 }
 
 div.main-bg {
@@ -29,7 +37,7 @@ div.main-bg {
     filter: blur(5px);
 }
 
-.center-part{
+.center-part {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,7 +80,6 @@ div.main-bg {
         height: 25px;
     }
 }
-
 
 /* Tirage au sort */
 

@@ -39,7 +39,7 @@ function Jackpot(id, products) {
 
     this.init = function () {
         for (var i = 0; i < this.reelCount; i++) {
-            var col4 = $('<div class="col-4"></div>');
+            var col4 = $('<div class="slider"></div>');
             var slider = $('<div class="roulette"></div>');
             col4.append(slider);
             this.addSymbolsToStrip(slider, true);
@@ -58,7 +58,7 @@ function Jackpot(id, products) {
             var slot = $("<div class='slot'></div>");
             if (i === 0 && isOnInit) {
                 slot.css({
-                    "margin-top": "-55px"
+                    "margin-top": "-45px"
                 });
             }
             slot.append(image);
@@ -79,7 +79,7 @@ function Jackpot(id, products) {
     this.spinOne = function (slider) {
         var heightBefore = parseInt(slider.css("height"), 10);
         that.addSymbolsToStrip(slider, false);
-        var marginTop = -(heightBefore + ((that.endingLocation) * that.height) + 28);
+        var marginTop = -(heightBefore + ((that.endingLocation) * that.height) + 45);
         slider.stop().animate({
             marginTop: marginTop + "px"
         }, {
@@ -87,6 +87,6 @@ function Jackpot(id, products) {
             'easing': "easeOutElastic"
         });
         
-        return slider.find('.slot:nth(' + (slider.find('.slot').length - 13) + ')').find('img').attr('src');
+        return slider.find('.slot:nth(' + (slider.find('.slot').length - 12) + ')').find('img').attr('src');
     };
 }
