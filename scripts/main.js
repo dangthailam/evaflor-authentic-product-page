@@ -23,7 +23,37 @@ $(function () {
     $("#play-jackpot").click(function () {
         jackpot.spinAll();
     });
+
+    var wordingsContext = new WordingsContext("fr");
+
+    $(".language-select").click(function(){
+        var language = $(this).attr("id");
+        wordingsContext.language = language;
+        wordingsContext.changeLanguage();
+    });
 });
+
+function WordingsContext(language) {
+    this.language = language;
+    this.wordings = {
+        "fr": [
+            {"wordings-navbar-aboutus": "À propos de nous"},
+            {"wordings-navbar-whiskycollection": "Collection Whisky"},
+            {"wordings-navbar-allproducts": "Tous nos produits"},
+            {"wordings-notfoundpage-description": "La page que vous avez demandée n'existe plus"},
+            {"wordings-authentic-thisproductis": "Ce produit est"},
+            {"wordings-authentic": "authentique"},
+            {"wordings-productdesription": "Description de produit"},
+            {"wordings-form-sendbutton": "Envoyer"},
+            {"wordings-contactpage-title": "Contactez-nous"},
+            {"wordings-authentic-thisproductis": ""},
+        ]
+    };
+
+    this.changeLanguage = function(){
+        
+    };
+}
 
 function Jackpot(id, products) {
     var that = this;
@@ -86,7 +116,7 @@ function Jackpot(id, products) {
             'duration': that.time + Math.round(Math.random() * 1000),
             'easing': "easeOutElastic"
         });
-        
+
         return slider.find('.slot:nth(' + (slider.find('.slot').length - 12) + ')').find('img').attr('src');
     };
 }
