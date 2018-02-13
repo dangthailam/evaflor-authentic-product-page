@@ -1,11 +1,11 @@
 #jackpot {
-    padding: 20px;
+    padding: 0 20px;
     #jackpot-header {
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         img {
-            width: 200px;
-            margin-bottom: 20px;
+            height: 100px;
+            margin-bottom: 10px;
         }
         #jackpot-wordings {
             font-size: 0.9rem;
@@ -21,7 +21,7 @@
                 padding-left: 0;
                 margin-right: 10px;
                 width: 100px;
-                height: 180px;
+                height: 100px;
                 border: 5px solid #ccc;
                 border-radius: 5px;
                 border-image-source: linear-gradient(rgb(255, 255, 255), rgb(140, 56, 23), rgb(234, 138, 80), rgb(156, 80, 36));
@@ -39,10 +39,15 @@
                 img {
                     width: 100%;
                 }
-                .slot{
+                .slot {
                     border-bottom: 1px solid #ccc;
                 }
             }
+        }
+    }
+    #jackpot-form {
+        .checkbox {
+            font-size: 12px !important;
         }
     }
 }

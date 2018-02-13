@@ -1,0 +1,44 @@
+<!-- index.nunjucks -->
+{% extends "../layouts/layout.layout.html" %}
+
+
+{% block content %}
+    <main id="main">
+        <div id="ficheproduit" class="text-center">
+            <div id="productAuthentic">
+                <div class="authenticContainer">
+                    <div class="notAuthentic-checkedLogo">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="notAuthentic-checkedLogoText">
+                        <h4>Ce produit n'est pas</h4>
+                        <h2>authentique</h2>
+                    </div>
+
+                    <div id="photo">
+                        <span class="photo">
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/formen/">
+                                <img src="../../images/whisky.png" />
+                            </a>
+                        </span>
+                    </div>
+                    <div id="description">
+                        <div id="productNameContainer">
+                            <a class="productBrand">
+                                <h4>
+                                    <span>WHISKY FOR MEN</span>
+                                </h4>
+                            </a>
+                            <p class="productName">EAU DE TOILETTE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="openProductDescriptionBtn">
+                <a class="productDescriptionBtnContent" href="./product.html">
+                    Description de produit
+                </a>
+            </div>
+        </div>
+    </main>
+{% endblock %}

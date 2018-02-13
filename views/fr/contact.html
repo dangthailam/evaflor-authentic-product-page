@@ -1,0 +1,31 @@
+<!-- index.nunjucks -->
+{% extends "../layouts/layout.layout.html" %} 
+{% block content %}
+<main id="main">
+    <div id="contact" class="text-center center-part">
+        <form id="formulaire">
+            <div class="form-group">
+                <h1>Contactez-nous</h1>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="formName" placeholder="Nom / Prénom">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="formEmail" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="formPostalCode" placeholder="Sujet">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="5" id="formPostalCode" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="6LcTBEQUAAAAAIBeuuGulK0WbeZ3ZMVfYDOgNTFk"></div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn">Envoyer</button>
+            </div>
+        </form>
+    </div>
+</main>
+{% endblock %}

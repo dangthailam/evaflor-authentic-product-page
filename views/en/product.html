@@ -1,0 +1,76 @@
+<!-- index.nunjucks -->
+{% extends "../layouts/layout.layout.html" %}
+
+
+{% block content %}
+    <main id="main">
+        <div id="ficheproduit" class="text-center">
+            <div id="produit" class="center-part">
+                <div>
+                    <div id="photo">
+                        <span class="photo">
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/formen/">
+                                <img src="../../images/whisky.png" />
+                            </a>
+                        </span>
+                    </div>
+                    <div id="description">
+                        <div id="productNameContainer">
+                            <a class="productBrand">
+                                <h4>
+                                    <span>WHISKY FOR MEN</span>
+                                </h4>
+                            </a>
+                            <p class="productName">EAU DE TOILETTE</p>
+                            <p class="productDescription">
+                                This man is classy and elegant, simple but yet sophisticated. A man with such class can only perfect his style with WHISKY FOR MEN.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="slide">
+                <div id="recommendProducts" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/origin/" target="_blank">
+                                <img src="../../images/origin.png" width="20%" />
+                            </a>
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/black/" target="_blank">
+                                <img src="../../images/black.png" width="20%" />
+                            </a>
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/double/" target="_blank">
+                                <img src="../../images/double.png" width="20%" />
+                            </a>
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/red/" target="_blank">
+                                <img src="../../images/red.png" width="20%" />
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/origin/" target="_blank">
+                                <img src="../../images/origin.png" width="20%" />
+                            </a>
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/black/" target="_blank">
+                                <img src="../../images/black.png" width="20%" />
+                            </a>
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/double/" target="_blank">
+                                <img src="../../images/double.png" width="20%" />
+                            </a>
+                            <a href="http://www.evaflor.com/mensfragrance/whisky/red/" target="_blank">
+                                <img src="../../images/red.png" width="20%" />
+                            </a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#recommendProducts" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#recommendProducts" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
