@@ -1,0 +1,22 @@
+#home {
+    height: calc(100vh - 56px);
+    padding: 0 20px;
+    .home-content {
+        margin-top: -100px;
+        #bienvenue {
+            background-image: url('../images/background_vide.png');
+            background-size: cover;
+            height: 225px;
+            width: 100%;
+            position: relative;
+            span {
+                position: absolute;
+                bottom: 35px;
+                left: 0;
+                color: #333;
+                font-weight: 500;
+                font-size: 19px;
+            }
+        }
+    }
+}

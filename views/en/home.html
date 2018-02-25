@@ -1,35 +1,14 @@
 <!-- index.nunjucks -->
-{% extends "../layouts/layout.layout.en.html" %}
-
-
-{% block content %}
-    <main id="main">
-        <div id="ficheproduit" class="text-center">
-            <div id="produit" class="center-part">
-                <div>
-                    <div id="photo">
-                        <span class="photo">
-                            <a href="http://www.evaflor.com/mensfragrance/whisky/formen/">
-                                <img src="../../images/whisky.png" />
-                            </a>
-                        </span>
-                    </div>
-                    <div id="description">
-                        <div id="productNameContainer">
-                            <a class="productBrand">
-                                <h4>
-                                    <span>WHISKY FOR MEN</span>
-                                </h4>
-                            </a>
-                            <p class="productName">EAU DE TOILETTE</p>
-                            <p class="productDescription">
-                                This man is classy and elegant, simple but yet sophisticated. A man with such class can only perfect his style with WHISKY FOR MEN.
-                            </p>
-                        </div>
-                    </div>
+{% extends "../layouts/layout.layout.fr.html" %} {% block content %}
+<main id="main">
+    <div id="ficheproduit" class="text-center">
+        <div id="home" class="center-part">
+            <div class="home-content">
+                <div id="bienvenue">
+                    <span>
+                        Welcome to Evaflor's product authentication page
+                    </span>
                 </div>
-            </div>
-            <div id="slide">
                 <div id="recommendProducts" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -72,5 +51,6 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 {% endblock %}

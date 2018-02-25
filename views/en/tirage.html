@@ -1,5 +1,5 @@
 <!-- index.nunjucks -->
-{% extends "../layouts/layout.layout.html" %}
+{% extends "../layouts/layout.layout.en.html" %}
 
 
 {% block content %}
@@ -7,8 +7,8 @@
         <form id="formulaire" action="./gagnant.html">
             <div id="carre">
                 <div class="wording">
-                    <h1 class="wordings wordings-drawpage-win">WIN</h1>
-                    <p class="presentDescription wordings wordings-drawpage-prize">a gift box
+                    <h1>WIN</h1>
+                    <p class="presentDescription">a gift box
                         <br/>of the brand Whisky</p>
                 </div>
 
@@ -25,26 +25,26 @@
                 </div>
 
                 <h5>
-                    <span class="wordings wordings-drawpage-drawoflots">DRAW OF LOTS</span>
+                    <span>DRAW OF LOTS</span>
                     <br/> on : --/--/--
                 </h5>
             </div>
 
             <div class="form-group">
-                <input type="text" class="form-control wordings wordings-form-name" id="formName" placeholder="First/Last name">
+                <input type="text" class="form-control" id="formName" placeholder="First/Last name">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control wordings wordings-form-email" id="formEmail" placeholder="Email">
+                <input type="text" class="form-control" id="formEmail" placeholder="Email">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control wordings wordings-form-postalcode" id="formPostalCode" placeholder="Postal code">
+                <input type="text" class="form-control" id="formPostalCode" placeholder="Postal code">
             </div>
 
             <div class="text-center">
-                <button type="submit" class="btn wordings wordings-drawpage-participate">I PARTICIPATE*</button>
+                <button type="submit" class="btn">I PARTICIPATE*</button>
             </div>
 
-            <p class="asterixDescription text-center wordings wordings-drawpage-acceptoffer">* and I want to receive the Whisky gift.</p>
+            <p class="asterixDescription text-center">* and I want to receive the Whisky gift.</p>
         </form>
     </main>
 {% endblock %}
